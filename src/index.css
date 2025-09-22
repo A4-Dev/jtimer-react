@@ -1,0 +1,37 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Allow MUI to control colors */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: unset;
+  /*color: unset;*/
+  display: block;
+}
+
+/* Optional: reset button styling if you're using MUI buttons */
+button {
+  all: unset;
+}
+
+/* Remove layout-breaking centering */
+body {
+  place-items: unset;
+  display: block;
+}
+
+/* Remove hardcoded h1 and button styles */
+h1, button {
+  all: unset;
+}
