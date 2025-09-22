@@ -502,7 +502,7 @@ export default function TabataTimerApp() {
                             textAlign: 'center',
                             fontWeight: 900,
                             lineHeight: 1,
-                            fontSize: { xs: '12vh', sm: '16vh', md: '24vh', lg: '32vh' },
+                            fontSize: { xs: '8vh', sm: '16vh', md: '24vh', lg: '32vh' },
                           }}
                         >
                           {currentRound} / {activeTimer.rounds}
@@ -545,7 +545,7 @@ export default function TabataTimerApp() {
                                   textAlign: 'center',
                                   fontWeight: 900,
                                   lineHeight: 1,
-                                  fontSize: { xs: '12vh', sm: '16vh', md: '24vh', lg: '32vh' },
+                                  fontSize: { xs: '8vh', sm: '16vh', md: '24vh', lg: '32vh' },
                                 }}
                               >
                                 {formatTime(timeLeft)}
@@ -559,7 +559,7 @@ export default function TabataTimerApp() {
                               textAlign: 'center',
                               fontWeight: 900,
                               lineHeight: 1,
-                              fontSize: { xs: '12vh', sm: '16vh', md: '24vh', lg: '32vh' },
+                              fontSize: { xs: '8vh', sm: '16vh', md: '24vh', lg: '32vh' },
                             }}
                           >
                             {formatTime(timeLeft)}
