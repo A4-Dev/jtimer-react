@@ -147,6 +147,22 @@ export default function TabataTimerApp() {
   const pageBg = getBgColorValue();
   const pageFg = useMemo(() => getContrastColor(pageBg), [pageBg]);
 
+ // Browser tab info
+
+  useEffect(() => {
+  if (!activeTimer) {
+    document.title = "Combat Cardio Timer"; // default
+  } else if (isRunning && !isPaused) {
+    document.title = `${formatTime(timeLeft)} • ${activeTimer.name}`;
+  } else if (isPaused) {
+    document.title = `⏸ ${formatTime(timeLeft)} • ${activeTimer.name}`;
+  } else if (isComplete) {
+    document.title = `✅ Complete • ${activeTimer.name}`;
+  } else {
+    document.title = activeTimer.name;
+  }
+}, [activeTimer, isRunning, isPaused, isComplete, timeLeft]);
+
   // Shared tile styling so Cards match the page background
   const tileSx = {
     flex: 1,
